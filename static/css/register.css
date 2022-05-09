@@ -1,0 +1,133 @@
+body{
+    background-image: linear-gradient(
+      to right top,
+      rgb(5, 20, 42),
+      rgb(5, 26, 65),
+      rgb(23, 30, 86),
+      rgb(50, 29, 106),
+      rgb(81, 18, 122)
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .cont{
+      width: 99%;
+      height: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      overflow: hidden;
+  }
+  
+  h4{
+    color: rgb(151, 184, 184);
+    font-size: larger;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 7%;
+    margin-left: 10px;
+    text-transform: uppercase;
+  }
+  
+  .center{
+    border: 2px solid aqua;
+    border-radius: 20px;
+    display: block;
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    margin-top: 0%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  input {
+    border-radius: 5px;
+    width: 80%;
+    height: 5%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+  }
+  
+  #submit{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #DDD6FE;
+    color: black;
+    height: 10%;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-style: bold;
+    margin: 10%;
+    margin-top: 7%;
+    width: 30%;
+  }
+  
+a{
+    background-image: linear-gradient(
+        to left top,
+        rgb(5, 20, 42),
+        rgb(5, 26, 65),
+        rgb(23, 30, 86),
+        rgb(50, 29, 106),
+        rgb(81, 18, 122)
+      );
+    margin: auto;
+    margin-top: 1.5%;
+    border: 3px solid aqua;
+    border-radius: 5px;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    height: 2.5rem;
+    width: 10rem;   
+    vertical-align: middle;
+  }
+
+  .output{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 10px;
+  }
+
+  .wave1, .wave2{
+      height: 30px;
+      position: absolute;
+      width: 100%;
+      z-index: 15;
+      left: 0;
+      bottom: 0;
+  }
+  
+  .wave1 {
+    animation: wave-animation1 8.7s infinite linear;
+  }
+  .wave2 {
+    animation: wave-animation1 6.3s infinite linear; 
+  }
+  
+  @keyframes wave-animation1 {
+    0%   { background-position: 0 0; }
+    100% {background-position: 2000px 0;}
+  }
+  
+  .wave1 {
+      background: url('http://www.templates-preview.com/bootstrap-templates/300111854/images/wave1.png') 0 0 repeat-x;
+  }
+  .wave2 {
+      background: url('http://www.templates-preview.com/bootstrap-templates/300111854/images/wave2.png') 0 0 repeat-x;
+  }
